@@ -1,0 +1,243 @@
+@import 'styles/weui.wxss';
+page {
+    background-color: #f2f2f2;
+    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.page__hd {
+    padding: 40px;
+}
+
+.page__bd {
+    padding-bottom: 40px;
+}
+
+.page__bd_spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page__ft {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: #888888;
+    text-align: left;
+    font-size: 14px;
+}
+
+.clearfloat:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.goodsList .item {
+    float: left;
+    width: 330rpx;
+    padding: 15rpx 0 15rpx 31.5rpx;
+    overflow: hidden;
+    position: relative;
+}
+
+.activityList {
+    padding-top: 16rpx;
+}
+
+.goodsList .item image {
+    width: 330rpx;
+    height: 186rpx;
+    display: block;
+}
+
+.goodsList .item text {
+    display: block;
+}
+
+.goodsList .goods-name {
+    font-size: 28rpx;
+    color: #353535;
+    margin-top: 17rpx;
+    overflow: hidden;
+    /*自动隐藏文字*/
+    text-overflow: ellipsis;
+    /*文字隐藏后添加省略号*/
+    white-space: nowrap;
+    /*强制不换行*/
+    width: 330rpx;
+    /*不允许出现半汉字截断*/
+}
+
+.goodsList .goods-price {
+    color: #f42433;
+    font-size: 24rpx;
+    margin-top: 4rpx;
+}
+
+.goodsList .shop-name {
+    color: #777;
+    font-size: 24rpx;
+    float: left;
+    margin: 8rpx 0 0 6rpx;
+}
+
+.goodsList .item .icon-shop {
+    width: 26rpx;
+    height: 24rpx;
+    float: left;
+    position: relative;
+    top: 12rpx;
+}
+
+.goodsList .coupon-type {
+    height: 24rpx;
+    line-height: 24rpx;
+    padding: 4rpx;
+    background: #f42433;
+    color: #fff;
+    font-size: 24rpx;
+    border-radius: 2rpx;
+    float: left;
+    margin: 5rpx 8rpx 0 0;
+}
+
+.shopsList .item text {
+    display: block;
+    font-size: 32rpx;
+    color: #353535;
+}
+
+.shopsList .item .shops-pic {
+    width: 690rpx;
+    height: 390rpx;
+    display: block;
+}
+
+.shopsList .item .shops-name {
+    font-size: 34rpx;
+    font-weight: bold;
+    margin-top: 22rpx;
+}
+
+.shopsList .item .shops-price {
+    color: #f42433;
+    margin-top: 4rpx;
+}
+
+.shopsList .item .coupon-type {
+    height: 24rpx;
+    line-height: 24rpx;
+    padding: 6rpx;
+    background: #f42433;
+    color: #fff;
+    font-size: 24rpx;
+    border-radius: 2rpx;
+    float: left;
+    margin: 12rpx 8rpx 0 0;
+}
+
+.shopsList .icon-shop {
+    display: block;
+    margin-top: 9rpx;
+    margin-right: 8rpx;
+    background: url(https://wxrd-shop.kongzhong.com/images/2019-03-26/bb3e/icon-shop.png) no-repeat left center;
+    background-size: 33rpx 30rpx;
+    padding-left: 41rpx;
+}
+
+.navBar-content {
+    margin-top: 16rpx;
+    background: #fff;
+    height: 148rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.navBar-content .item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    padding-top: 30rpx;
+    position: relative;
+}
+
+.navBar-content .item text {
+    display: block;
+    font-size: 24rpx;
+    color: #777;
+}
+
+.navBar-content .item text:nth-child(1) {
+    font-size: 32rpx;
+    color: #353535;
+}
+
+.navBar-content .item image {
+    width: 38rpx;
+    height: 38rpx;
+}
+
+.navBar-content .item:nth-child(4) {
+    padding-top: 20rpx;
+    background: url(https://wxrd-shop.kongzhong.com/images/2019-03-18/1dfc/icon-data-bg.png) no-repeat left top;
+    background-size: 17rpx 148rpx;
+}
+
+.navBar-content .item .more-btn {
+    font-size: 18rpx;
+    color: #ccc;
+    position: absolute;
+    top: 106rpx;
+    left: 35%;
+}
+
+.navList-content .item,
+.shareBar {
+    height: 98rpx;
+    margin-top: 16rpx;
+    font-size: 32rpx;
+    color: #353535;
+    line-height: 98rpx;
+    text-indent: 31rpx;
+    display: block;
+    background: #fff url(https://wxrd-shop.kongzhong.com/images/2019-03-25/175e/icon-left.png) no-repeat 720rpx center;
+    background-size: 12rpx 23rpx;
+}
+
+.ico_bt_btn {
+    background: rgba(255, 255, 255, 0);
+    font-size: 32rpx;
+    text-align: left;
+    color: #353535;
+    line-height: 98rpx;
+}
+
+button::after {
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.bottom {
+    font-size: 24rpx;
+    color: #777;
+    text-align: center;
+}
+
+.page .weui-loadmore__tips_in-line {
+    background: #f2f2f2;
+}

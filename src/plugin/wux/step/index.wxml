@@ -1,0 +1,27 @@
+<view class="wux-class {{ classes.wrap }} {{ className }}" style="width: {{ width }}">
+    <view class="{{ classes.hd }}">
+        <view class="{{ classes.icon }}" wx:if="{{ !hasIcon }}">{{ index + 1 }}</view>
+        <view class="{{ classes.icon }}" wx:else>
+            <!--<wux-icon wux-class="{{ classes.thumb }}" type="{{ thumb }}" size="24" wx:if="{{ thumb }}"></wux-icon>-->
+            <image style="width:40rpx; height:40rpx;" src="{{ className == 'wux-step--process' ? iconCurrent : thumb}}"></image>
+        </view>
+    </view>
+    <view class="{{ classes.bd }}">
+        <view class="{{ classes.title }}" wx:if="{{ title }}">
+            {{ title }}
+        </view>
+        <view class="{{ classes.title }}" wx:else>
+            <slot name="title"></slot>
+        </view>
+        <view class="{{ classes.content }}" wx:if="{{ content }}">
+            <view class="{{classes.dot}}"  wx:for="{{content}}" wx:key="index">
+                <view>{{item.con}}</view>
+                <view>{{item.time}}</view>
+             </view>
+        </view>
+        <view class="{{ classes.content }}" wx:else>
+            <slot name="content"></slot>
+        </view>
+    </view>
+    <view class="{{ classes.ft }}"></view>
+</view>
